@@ -41,7 +41,7 @@ export default function Services() {
 
   return (
     <div className="Services">
-      <div style={{ marginLeft: "80px", paddingTop: "150px" }}>
+      <div style={{ marginLeft: "4.8vw", paddingTop: "10vh" }}>
         <h1 style={{ color: "white", margin: "0" }}>
           Innovation that Ensure <br />{" "}
           <span style={{ color: "Orange" }}>Your Market Success.</span>

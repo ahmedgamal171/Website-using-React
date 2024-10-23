@@ -1,0 +1,14 @@
+.btnsIndustry {
+  height: 20%;
+  font-size: 1.5em;
+  font-weight: bolder;
+  font-style: italic;
+  color: grey;
+  border: transparent;
+  /* border-radius: 1rem 0 0 1rem; */
+  &:hover {
+    color: orange;
+    transform: translateY(0.3em);
+    cursor: pointer;
+  }
+}
