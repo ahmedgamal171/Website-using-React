@@ -1,0 +1,107 @@
+.Services {
+  background-color: black;
+  width: 100%;
+  height: max-content;
+  justify-content: center;
+}
+
+.btn {
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: center;
+  background: grey;
+  color: white;
+  margin-left: 20px;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 15px;
+  font-family: Poppins;
+}
+
+.btnn {
+  border-radius: 30px;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: transparent;
+  color: white;
+  border: 2px solid grey;
+
+  &:hover {
+    color: orange;
+    cursor: pointer;
+    border-color: orange;
+  }
+}
+@keyframes changeBorders {
+  0% {
+    border: solid 4px black;
+    border-left: solid 4px white;
+  }
+  25% {
+    border: solid 4px black;
+    border-left: solid 4px white;
+  }
+  25.02% {
+    border: solid 4px black;
+    border-left: solid 4px white;
+    border-bottom: solid 4px white;
+  }
+  50% {
+    border: solid 4px black;
+    border-left: solid 4px white;
+    border-bottom: solid 4px white;
+  }
+  50.02% {
+    border: solid 4px black;
+    border-left: solid 4px white;
+    border-bottom: solid 4px white;
+    border-right: solid 4px white;
+  }
+  75% {
+    border: solid 4px black;
+    border-left: solid 4px white;
+    border-bottom: solid 4px white;
+    border-right: solid 4px white;
+  }
+  75.02% {
+    border: solid px white;
+  }
+}
+.service-container {
+  width: 90%;
+  max-width: 340px;
+  height: auto;
+  border: 2px solid white;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  animation: changeBorders 1s linear;
+}
+
+.service-title {
+  margin-left: 15px;
+  color: white;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+@media (min-width: 600px) {
+  .button-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    width: auto;
+    flex: 1 1 calc(50% - 40px);
+  }
+}
