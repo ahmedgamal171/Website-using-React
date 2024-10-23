@@ -5,6 +5,7 @@ import App from "./App";
 import SectionOne from "./SectionOne";
 import reportWebVitals from "./reportWebVitals";
 import Services from "./Services";
+import Industries from "./Industries";
 import logo from "./Images/Secondary Logo H.svg";
 import frame from "./Images/Side Menu.png";
 
@@ -12,8 +13,10 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
+
     <SectionOne />
     <Services />
+    <Industries />
   </React.StrictMode>
 );
 
