@@ -1,85 +1,49 @@
 import "./Services.css";
 import "./Industries.css";
-import autom from "./Videos/Automotive.mp4";
+import React, { useState } from "react";
 export default function Industries() {
+  const [imageSrc, setImageSrc] = useState(
+    "https://creteweb.blob.core.windows.net/assets/industry/1728388650-Automotive.mp4"
+  );
+  const changeImageSrc = (newPath) => {
+    setImageSrc(newPath);
+  };
   return (
     <div className="Services" style={{ paddingBottom: "7vh" }}>
       <div style={{ marginLeft: "4.8vw", paddingTop: "15vh" }}>
-        <h1
-          style={{
-            marginLeft: "4wv",
-            marginTop: "0",
-            fontSize: "2.1em",
-            color: "white",
-          }}
-        >
+        <h1 id="h1">
           Digitlization across{" "}
           <span style={{ color: "orange" }}>Industries.</span>
         </h1>
-        <div
-          style={{
-            borderRadius: "0.9em",
-            backgroundColor: "#20252A",
-            marginTop: "7vh",
-            width: "90vw",
-            height: "90vh",
-            // display: "flex",
-            // flexDirection: "column",
-          }}
-        >
+        <div id="div1">
           <div
             style={{
               display: "flex",
               flexDirection: "row",
             }}
           >
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                height: "auto",
-                width: "60vw",
-              }}
-            >
+            <div id="div2">
               <h1
                 style={{ marginLeft: "5vw", color: "white", paddingTop: "3vw" }}
               >
                 <span style={{ color: "orange" }}>Automative </span>Industries
               </h1>
 
-              <video
-                style={{ marginLeft: "5vw", width: "auto", height: "80%" }}
-                src={autom}
-                autoPlay
-                muted
-                loop
-              ></video>
+              <video id="video" src={imageSrc} autoPlay muted loop></video>
             </div>
-            <text
-              style={{
-                textDecoration: "Underline",
-                color: "white",
-                paddingTop: "11.5vh",
-                marginLeft: "-13.8vh",
-              }}
-            >
-              Learn More 🡥
-            </text>
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                height: "90vh",
-                width: "47vh",
-                marginLeft: "16vh",
-              }}
-            >
+            <text id="txt">Learn More 🡥</text>
+            <div id="div3">
               <button
                 className="btnsIndustry"
                 style={{
                   background: "#20252A",
                   boxShadow: "-15px 15px 15px -15px rgba(0, 0, 0, 0.4)",
                 }}
+                onClick={() =>
+                  changeImageSrc(
+                    "https://creteweb.blob.core.windows.net/assets/industry/1728388650-Automotive.mp4"
+                  )
+                }
               >
                 Automotive
               </button>
@@ -87,8 +51,12 @@ export default function Industries() {
                 className="btnsIndustry"
                 style={{
                   background: "#1c2126",
-                  // boxShadow: "-20px 0 15px -15px rgba(0, 0, 0, 0.6)",
                 }}
+                onClick={() =>
+                  changeImageSrc(
+                    "https://creteweb.blob.core.windows.net/assets/industry/1728485592-Real Estate.mp4"
+                  )
+                }
               >
                 Real Estate
               </button>
@@ -96,8 +64,12 @@ export default function Industries() {
                 className="btnsIndustry"
                 style={{
                   background: "#181c21",
-                  // boxShadow: "-25px 0 15px -15px rgba(0, 0, 0, 0.7)",
                 }}
+                onClick={() =>
+                  changeImageSrc(
+                    "https://creteweb.blob.core.windows.net/assets/industry/1728557336-Retail.mp4"
+                  )
+                }
               >
                 Retail
               </button>
@@ -105,8 +77,12 @@ export default function Industries() {
                 className="btnsIndustry"
                 style={{
                   background: "#14171c",
-                  // boxShadow: "-30px 0 15px -15px rgba(0, 0, 0, 0.8)",
                 }}
+                onClick={() =>
+                  changeImageSrc(
+                    "https://creteweb.blob.core.windows.net/assets/industry/1728459160-Entertainment.mp4"
+                  )
+                }
               >
                 Entertainment
               </button>
@@ -114,8 +90,12 @@ export default function Industries() {
                 className="btnsIndustry"
                 style={{
                   background: "#111417",
-                  // boxShadow: "-35px 0 15px -15px rgba(0, 0, 0, 0.9)",
                 }}
+                onClick={() =>
+                  changeImageSrc(
+                    "https://creteweb.blob.core.windows.net/assets/industry/1728463300-Tourism.mp4"
+                  )
+                }
               >
                 Tourism
               </button>

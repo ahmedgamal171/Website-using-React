@@ -7,18 +7,18 @@ export default function SectionOne() {
   return (
     <div className="SectionOne">
       <div>
-        <h1
+        <div
           style={{
             position: "fixed",
             top: "0",
             margin: "0",
             left: "0",
-            width: "100%",
+            width: "100vw",
           }}
         >
           <img id="logo" src={logo} />
           <img id="sidemenu" src={frame} />
-        </h1>
+        </div>
         <div id="SectionOneParagraphContainer">
           <p id="paragraph1">
             Make your furture so{" "}

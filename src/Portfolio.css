@@ -1,0 +1,12 @@
+#bckgrnd {
+  background-color: #45291b;
+  width: 100%;
+  height: 790px;
+}
+#divx {
+  position: absolute;
+  margin-top: 80vh;
+  margin-left: 10vh;
+  color: white;
+  font-family: Degular Display;
+}

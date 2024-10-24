@@ -11,4 +11,55 @@
     transform: translateY(0.3em);
     cursor: pointer;
   }
+  /* &:active {
+    transform: translateY(0.3em);
+    font-size: 1em;
+  } */
+  &:focus {
+    transform: translateY(0.3em);
+    font-size: 1em;
+    color: orange;
+    outline: none;
+  }
+}
+#h1 {
+  margin-left: 4wv;
+  margin-top: 0;
+  font-size: 2.1em;
+  color: white;
+}
+#div1 {
+  border-radius: 0.9em;
+  background-color: #1f2429;
+  margin-top: 7vh;
+  width: 90vw;
+  height: 90vh;
+}
+#div2 {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 60vw;
+}
+
+#video {
+  margin-left: 5vw;
+  width: auto;
+  height: "80%";
+  border-radius: 15%;
+}
+
+#txt {
+  text-decoration: Underline;
+  color: white;
+  padding-top: 11.5vh;
+  margin-left: -13.8vh;
+}
+
+#div3 {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  width: 47vh;
+  margin-left: 16vh;
 }

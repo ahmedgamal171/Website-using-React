@@ -60,6 +60,7 @@ export default function Services() {
           paddingBottom: "2vh",
           display: "flex",
           flexDirection: "row",
+          width: "auto",
         }}
       >
         {servicelist}
