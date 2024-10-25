@@ -1,12 +1,32 @@
 #bckgrnd {
-  background-color: #45291b;
   width: 100%;
-  height: 790px;
+  height: 100%;
 }
 #divx {
   position: absolute;
-  margin-top: 80vh;
-  margin-left: 10vh;
+  top: 80%;
+  left: 7%;
   color: white;
-  font-family: Degular Display;
+  text-align: center;
+}
+#hdr {
+  font-family: Montserrat;
+  font-weight: bolder;
+  font-size: 2em;
+}
+#video1 {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.CarouselContainer {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.CarouselContainer div {
+  position: relative;
 }

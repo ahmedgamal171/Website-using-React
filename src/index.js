@@ -7,6 +7,7 @@ import reportWebVitals from "./reportWebVitals";
 import Services from "./Services";
 import Industries from "./Industries";
 import Portfolio from "./Portfolio";
+import Insights from "./Insights";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
@@ -17,6 +18,7 @@ root.render(
       <Services />
       <Industries />
       <Portfolio />
+      <Insights />
     </div>
   </React.StrictMode>
 );

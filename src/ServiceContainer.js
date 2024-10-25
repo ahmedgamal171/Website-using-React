@@ -1,6 +1,5 @@
 import "./Services.css";
 
-const arr = [];
 export default function ServiceContainer({
   servicetitle = "no title",
   details = "",
