@@ -9,18 +9,20 @@ import Industries from "./Industries";
 import Portfolio from "./Portfolio";
 import Insights from "./Insights";
 import Clients from "./Clients";
+import GotProject from "./GotProject";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
 
-    <div style={{ width: "100vw" }}>
+    <div style={{ width: "fit-content", height: "auto" }}>
       <SectionOne />
       <Services />
       <Industries />
       <Portfolio />
       <Insights />
       <Clients />
+      <GotProject></GotProject>
     </div>
   </React.StrictMode>
 );

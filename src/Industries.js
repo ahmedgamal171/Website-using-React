@@ -44,6 +44,7 @@ export default function Industries() {
                     "https://creteweb.blob.core.windows.net/assets/industry/1728388650-Automotive.mp4"
                   )
                 }
+                autoFocus
               >
                 Automotive
               </button>
