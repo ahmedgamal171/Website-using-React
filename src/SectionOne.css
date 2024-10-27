@@ -146,3 +146,13 @@
   font-size: 36px;
   margin-left: 50px;
 }
+.listitems li {
+  font-size: larger;
+  font-weight: bolder;
+  margin-top: 2vh;
+  &:hover {
+    color: orange;
+    cursor: pointer;
+    border-color: orange;
+  }
+}
