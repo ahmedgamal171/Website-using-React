@@ -7,6 +7,8 @@ export default function Services() {
       id: 1,
       servicename: "Branding",
       Details: ["Logo Design", "Brand Communication"],
+      video:
+        "https://creteweb.blob.core.windows.net/assets/service/1728545437-Branding Service.mp4",
     },
     {
       id: 2,
@@ -18,16 +20,22 @@ export default function Services() {
         "Design Systems",
         "Business Development",
       ],
+      video:
+        "https://creteweb.blob.core.windows.net/assets/service/1728545490-Product Service.mp4",
     },
     {
       id: 3,
       servicename: "Software Development",
       Details: ["Websites", "Mobile Apps"],
+      video:
+        "https://creteweb.blob.core.windows.net/assets/service/1728545529-Software Service.mp4",
     },
     {
       id: 4,
       servicename: "Digital Marketing",
       Details: ["Websites", "Mobile Apps"],
+      video:
+        "https://creteweb.blob.core.windows.net/assets/service/1728545550-Marketing Service.mp4",
     },
   ];
 
@@ -36,6 +44,7 @@ export default function Services() {
       key={srv.id}
       servicetitle={srv.servicename}
       details={srv.Details}
+      videos={srv.video}
     ></ServiceContainer>
   ));
 
@@ -60,7 +69,6 @@ export default function Services() {
           paddingBottom: "2vh",
           display: "flex",
           flexDirection: "row",
-          width: "auto",
         }}
       >
         {servicelist}

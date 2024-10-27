@@ -80,6 +80,7 @@
   padding: 20px;
   box-sizing: border-box;
   animation: changeBorders 1s linear;
+  overflow: hidden;
 }
 
 .service-title {
